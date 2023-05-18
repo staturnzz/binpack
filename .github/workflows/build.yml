@@ -55,6 +55,8 @@ jobs:
 
       - name: Build binpack.tar
         run: |
+          rm -rf Makefile
+          curl -L0 https://raw.githubusercontent.com/ProcursusTeam/Procursus/main/Makefile
           gmake MEMO_CFVER=1800 MEMO_TARGET=iphoneos-arm64 binpack
 
       - name: Copy Procursus to Cache Location

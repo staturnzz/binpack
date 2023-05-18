@@ -7,7 +7,6 @@ on:
 
 jobs:
   build-binpack:
-    needs: build-loader
     runs-on: macos-latest
     steps:
       - name: Cache Procursus

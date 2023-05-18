@@ -75,6 +75,8 @@
 #include <stdlib.h>
 #include <string.h>
 
+#define EXECNAME "binpack"
+
 typedef int crunched_stub_t(int, char **, char **, char **);
 
 struct stub {
